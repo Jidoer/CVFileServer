@@ -16,12 +16,8 @@ func main() {
 		types :=ctx.Params().Get("types")
 		number :=ctx.Params().Get("number")
 		log.Print("Type:"+types+"Number:"+number)
-		
-
 
 	}) //URL-API
-
-
 	app.Listen(":8080")
 }
 
