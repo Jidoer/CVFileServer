@@ -12,7 +12,7 @@ func main() {
 
 	app.Get("/", download)
 	//app.Get("/download", downloadWithRateLimit)
-	app.Get("/UrlEnterApi/{types:string}/{number:string}",func(ctx iris.Context) {
+	app.Get("/fileapi/{types:string}/{number:string}",func(ctx iris.Context) {
 		types :=ctx.Params().Get("types")
 		number :=ctx.Params().Get("number")
 		log.Print("Type:"+types+"Number:"+number)
